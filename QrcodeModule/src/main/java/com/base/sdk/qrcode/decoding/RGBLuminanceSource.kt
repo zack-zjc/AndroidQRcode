@@ -10,7 +10,7 @@ import com.google.zxing.LuminanceSource
  */
 class RGBLuminanceSource(bitmap: Bitmap) : LuminanceSource(bitmap.width,bitmap.height) {
 
-  private lateinit var luminances: ByteArray
+  private var luminances: ByteArray
 
   init {
     val width = bitmap.width
