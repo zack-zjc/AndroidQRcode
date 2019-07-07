@@ -1,5 +1,4 @@
 include ':app'
 
-
 include ':QrCodeModule'
 project(':QrCodeModule').projectDir = new File('QrCodeModule')
