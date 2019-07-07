@@ -28,11 +28,11 @@ fragment使用，QrCodeFragment添加到界面即可使用。
 QrCodeFragment的onresume实现了初始化camera，初始化时添加了权限检测checkPermission(android.Manifest.permission.CAMERA)，
 请确认是否包含camera权限，否则无法实现扫码，可再activity添加权限检测后再初始花fragment
 
-#QrCodeFragment部分说明代码以及方法
+# QrCodeFragment部分说明代码以及方法
 
 ```groovy
 
-	override fun onResume() {
+  override fun onResume() {
     super.onResume()
     initCamera()
   }
@@ -74,7 +74,6 @@ QrCodeFragment的onresume实现了初始化camera，初始化时添加了权限�
 
   	fun onScanFail()
 
-	}
+  }
 
-}
 ```
