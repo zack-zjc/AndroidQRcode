@@ -20,7 +20,7 @@ import com.base.sdk.qrcode.decoding.CaptureActivityHandler
  * Date:2019/4/22
  * Description:QrCodeFragment
  */
-open class QrCodeFragment : Fragment(), SurfaceHolder.Callback ,QRCodeCalback {
+open class QrCodeFragment : Fragment(), SurfaceHolder.Callback ,QRCodeCallback {
 
   private val mHandler = Handler()
 
@@ -29,7 +29,7 @@ open class QrCodeFragment : Fragment(), SurfaceHolder.Callback ,QRCodeCalback {
   private var viewfinderView:View? = null
   private var hasSurface: Boolean = false
   private var hasScanProcessing = false
-  private var callback:QRCodeCalback?=null
+  private var callback:QRCodeCallback?=null
 
   /**
    * 扫码成功
@@ -48,7 +48,7 @@ open class QrCodeFragment : Fragment(), SurfaceHolder.Callback ,QRCodeCalback {
   /**
    * 设置扫码callback
    */
-  fun setCallback(callback:QRCodeCalback){
+  fun setCallback(callback:QRCodeCallback){
     this.callback = callback
   }
 

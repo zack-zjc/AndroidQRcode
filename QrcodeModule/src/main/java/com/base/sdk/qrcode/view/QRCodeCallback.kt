@@ -5,7 +5,7 @@ package com.base.sdk.qrcode.view
  * Date:2019/4/22
  * Description:扫描结果处理
  */
-interface QRCodeCalback {
+interface QRCodeCallback {
 
   fun onScanSuccess(text: String)
 

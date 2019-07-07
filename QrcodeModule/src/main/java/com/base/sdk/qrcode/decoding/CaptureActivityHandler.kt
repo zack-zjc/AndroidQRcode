@@ -4,7 +4,7 @@ import android.os.Handler
 import android.os.Message
 import com.base.sdk.qrcode.R
 import com.base.sdk.qrcode.camera.CameraManager
-import com.base.sdk.qrcode.view.QRCodeCalback
+import com.base.sdk.qrcode.view.QRCodeCallback
 import com.google.zxing.Result
 
 
@@ -14,7 +14,7 @@ import com.google.zxing.Result
  * Date:2019/4/22
  * Description:CaptureActivityHandler
  */
-class CaptureActivityHandler(private val qrCodeCallback: QRCodeCalback?): Handler() {
+class CaptureActivityHandler(private val qrCodeCallback: QRCodeCallback?): Handler() {
 
   private val decodeThread: DecodeThread = DecodeThread(this)
   private var state: State = State.SUCCESS
